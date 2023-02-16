@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  .header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/banner2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-logo{
+    width: 120px;
+    margin-left: 40px;
+    padding-top: 5px;
+  }
+  .sign{
+      float: right;
+      line-height: 60px;
+      margin-right: 40px;
+  }
+  .sign a{
+      color: hsl(0, 0%, 100%);
+      font-weight: bold;
+      text-decoration: none;
+  }
+  
+  .sign a:hover{
+      color: #4690C8; /* blue */
+      border-color: #4690C8; /* blue */
+  }
+  .text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 62px;
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+  }
+/*------------- End Header-------------*/
+/*----------- START CTA -----------*/
+.cta{
+    margin: 100PX auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/banner2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color:#fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #4690C8;
+    background: #4690C8;
+    transition: 1s;
+}
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/*----------- END CTA -----------*/
+/*----------- START Footer -----------*/
+.rowTwo{
+    display: flex;
+    justify-content:space-between;
+}
+.footer-col {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.footer-col h4{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.footer-col ul li{
+    list-style: none;
+    display: list-item;
+    position: relative; 
+}
+.footer-col ul li a{
+    color: #777;
+    text-decoration: none;
+    font-size: 13px;
+}
+.footer-col ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #4690C8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.footer-col ul li:hover::after{
+    width: 100%;
+}
+.footer-col .details{
+    text-align: center;
+}
+.footerCol{
+    background: #4690C8;
+    text-align: center;
+}
+.footerCol p{
+    color: #fff;
+    font-size: 13px;
+}
+@media(max-width: 700px){
+    .rowTwo{
+        flex-direction: column;
+    }
+}
+/*-------- START Service ----------*/
+.service{
+    margin: 100PX auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/jmmbagm.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.service-title h1{
+    color:#fff;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.service-content p{
+    color: #fff;
+}
+@media(max-width: 700px){
+    .service-title h1{
+        font-size: 24px;
+    }
+}
+.servicetwo {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+}
+.service-col{
+    flex-basis: 31%;
+    background: #6DC1DB;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing:border-box;
+    transition: 0.5s;
+}
+.service:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+/*Just the background stuff*/
+span.s1 {
+    position: absolute;
+    top: 5;
+    font-size: 15rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #3C4447;
+  }
+/* The card */
+.card {
+    position: relative;
+    height: 450px;
+    width: 900px;
+    margin: 200px auto;
+    background-color: #FFF;
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Image on the left side */
+.thumbnail {
+float: left;
+position: relative;
+left: 30px;
+top: -30px;
+height: 320px;
+width: 530px;
+-webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+overflow: hidden;
+}
+
+/*object-fit: cover;*/
+/*object-position: center;*/
+img.left {
+position: absolute;
+left: 50%;
+top: 50%;
+height: auto;
+width: 100%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+/* Right side of the card */
+.right {
+margin-left: 590px;
+margin-right: 20px;
+}
+
+.cardh1{
+padding-top: 15px;
+font-size: 1.3rem;
+color: #4B4B4B;
+}
+
+.cardseparator {
+margin-top: 10px;
+border: 1px solid #C3C3C3;
+}
+.cardbody {
+text-align: justify;
+padding-top: 10px;
+font-size: 0.95rem;
+line-height: 150%;
+color: #4B4B4B;
+}
+/* Those futur buttons */
+
+/* Floating action button */
+.fab1 {
+position: absolute;
+right: 50px;
+bottom: -40px;
+box-sizing: border-box;
+padding-top: 18px;
+background-color: #1875D0;
+width: 80px;
+height: 80px;
+color: white;
+text-align: center;
+border-radius: 50%;
+-webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+}
